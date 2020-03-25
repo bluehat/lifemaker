@@ -1,3 +1,7 @@
+---
+permalink: /readme.html
+---
+
 # lifemaker
 Makers saving lives
 
