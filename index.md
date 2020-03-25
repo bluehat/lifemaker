@@ -38,5 +38,5 @@ Ideally, we will help you coordinate with a broader effort in your geographic co
 If you are capable of submitting a pull request to the repo, that is the preferred and the fastest method. If you are unable to use Github or uncomfortable putting contact information on this github, please send it by email. 
 
 We also have these emails as backup:
-+ If you want supplies sent to your healthcare facility: healthcare@lifemaker.org
-+ If you want to make supplies: makers@lifemaker.org
++ If you want supplies sent to your healthcare facility: [mailto](healthcare@lifemaker.org)
++ If you want to make supplies: [mailto](makers@lifemaker.org)
