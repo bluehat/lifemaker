@@ -1,10 +1,14 @@
 In light of the dramatic shortage of medical equipment, some healthcare institutions are turning to the maker community for much-needed supplies.
 
-This website attempts to help makers and healthcare institions find each other.
+This website attempts to help develop supply chains to formalize and scale this process.
 
 You can help make stuff if you have access to any of the following:
 * A 3D printer
 * A sewwing machine
+
+### How does it work?
+1. Individuals who do not have symptoms wear masks and gloves while they manufacture relevant objects in their homes or makerspaces.
+1. The items are mailed to a location where they are counted, re-sanitized, checked for quality control, and sent to the healthcare facility.
 
 ### Coordination
 
@@ -14,6 +18,9 @@ You can help make stuff if you have access to any of the following:
 #### Communities already making equipment
 * [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is manufacturing face masks, face shields, and hospital scrubs.
   * Items are made at home, mailed to the makerspace, and then re-sanitized there.
+
+#### Locations to mail things
+* [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is accepting and distributing masks, face fields, and hospital scrubs.
 
 #### Communities which would like to make equipment
 Educational institutuions welcome
