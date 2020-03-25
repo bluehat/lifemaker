@@ -31,6 +31,6 @@ Ideally, we will help you coordinate with a broader effort in your geographic co
 * Finding healthcare institutions interested in equipment
 * Finding communities interested in making equipment
 * Helping upload and organize documentation on how to manufacture equipment
-* Manually introducing healtcare institutions and manufacturing communities
+* Manually introducing healtcare institutions and makers
 
 
