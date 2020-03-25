@@ -1,14 +1,17 @@
-In light of the dramatic shortage of medical equipment, some healthcare institutions are turning to the maker community for much-needed supplies.
+In light of the dramatic shortage of medical equipment, some healthcare institutions are turning to the maker community for much-needed equipment.
 
 This website attempts to help develop supply chains to formalize and scale this process.
 
-You can help make stuff if you have access to any of the following:
-* A 3D printer
-* A sewwing machine
-
-### How does it work?
-1. Individuals who do not have symptoms wear masks and gloves while they manufacture relevant objects in their homes or makerspaces.
-1. The items are mailed to a location where they are counted, re-sanitized, checked for quality control, and sent to the healthcare facility.
+### Directions for different groups
+* For makers and maker groups who have access to one of the following
+  * 3D printer
+  * Laser cutter
+  * Sewwing machine
+* For waypoints (places already working with healthcare professionals and who are interested in getting help from other makers to scale up their manufacturing capacity)
+* For healthcare providers who need equipment
+* For people who can help with or source supplies to manufacture equipment
+* For coordination volunteers who are willing to help introduce and coordinate makers, waypoints, healthcare providers, and suppliers
+* [For website volunteers](readme.md) such as coders, designers, and technical writers.
 
 ### Coordination
 
