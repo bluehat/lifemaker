@@ -1,0 +1,16 @@
+---
+- key: mc
+  name: Mayo Clinic
+  documentation: http://somewhere.com/link
+  address: 777 Somewhere USA
+  latlong:
+    - 36.6437
+    - 93.2185
+  description: |-
+    ya
+    ya
+  parts:
+    - jls-b
+    - jls-m
+  devices:
+    - yya-tt
