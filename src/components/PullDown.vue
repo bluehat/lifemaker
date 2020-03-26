@@ -9,7 +9,7 @@
     <div class="pd-content">
       <slot></slot>
     </div>
-    <h3 class="close" v-if="open" @click="$emit('toggle')">X</h3>
+    <h3 class="close" v-if="open" @click.stop="$emit('toggle')">X</h3>
   </div>
 </template>
 
