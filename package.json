@@ -8,8 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "commonmark": "^0.29.1",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "html-loader": "^1.0.0",
+    "markdown-loader": "^5.1.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
