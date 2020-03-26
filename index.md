@@ -21,9 +21,14 @@ This website attempts to help develop supply chains to formalize and scale this 
 #### Communities already making equipment
 * [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is manufacturing face masks, face shields, and hospital scrubs.
   * Items are made at home, mailed to the makerspace, and then re-sanitized there.
+* Worcester Polytechnic Institute
 
-#### Locations to mail things
-* [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is accepting and distributing masks, face fields, and hospital scrubs.
+#### Locations to send things
+##### Please always wear a mask and gloves, and do not make things if you have symptoms of any illness. Please see the guidelines of each group for more info
+* [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is accepting and distributing masks, face fields, and hospital scrubs. They work by mail.
+* [A Chicago group](https://www.facebook.com/groups/512046289743405/about/) is willing to handle the laser cut parts if people can do the 3D printed ones
+  * Locals: Drop things off at the makerspace
+  * Out-of-town: mail them directly to the Swedish Hospital Foundation
 
 #### Communities which would like to make equipment
 Educational institutuions welcome
