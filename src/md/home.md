@@ -46,6 +46,8 @@ Educational institutuions welcome
 
 Ideally, we will help you coordinate with a broader effort in your geographic community, but for now we're just collecting some form of contact information.
 
+Here is a [google form](https://docs.google.com/spreadsheets/d/1QE1vzezYdf6QJwxaMMLrWIks5AYAPUeSRWXxaYd3yK8/edit#gid=587452832) (not affiliated with us) where people with printers are volunteering to help.
+
 ### Technical bits
 
 #### How to manufacture equipment
