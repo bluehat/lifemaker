@@ -26,4 +26,4 @@ Please submit pull requests
 
 lifemaker.org is made using [VueJs](https://vuejs.org/) and [vue-router](https://router.vuejs.org/)
 
-Static content is defined within [src/md](./src/md) (see [home](./src/md/home))
+Static content is defined within [src/md](./src/md) (see [home](./src/md/home.md))
