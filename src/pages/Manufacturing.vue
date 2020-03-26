@@ -29,7 +29,14 @@
       <h3>You can help!</h3>
       <p>Here's what you can make to help people in need:</p>
     </div>
-    <div v-for="part of supportedParts" :key="part.key">{{part.name}}</div>
+    <div v-for="part of supportedParts" :key="part.key">
+      <h4 :style="{'margin-bottom': 0}">
+        <a :href="part.documentation">{{part.name}}</a>
+      </h4>
+      <CutterSpec v-if="part.equipment.cutter" :spec="part.equipment.cutter" />
+      <PrinterSpec v-if="part.equipment.printer" :spec="part.equipment.printer" />
+      <div v-html="part.description"></div>
+    </div>
   </div>
 </template>
 
@@ -38,6 +45,9 @@ import devices from "../yml/devices.yml";
 import parts from "../yml/parts.yml";
 import EquipmentForm from "../components/EquipmentForm";
 import PullDown from "../components/PullDown";
+import PrinterSpec from "../components/PrinterSpec";
+import CutterSpec from "../components/CutterSpec";
+
 import {
   where,
   map,
@@ -120,7 +130,7 @@ export default {
       );
     }
   },
-  components: { EquipmentForm, PullDown },
+  components: { EquipmentForm, PullDown, PrinterSpec, CutterSpec },
   created() {
     if (pipe(values, any(prop("has")))(this.equipment))
       this.equipmentOpen = false;

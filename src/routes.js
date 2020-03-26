@@ -15,8 +15,8 @@ export default [
     props: true
   },
   {
-    path: "/equipment",
-    name: "equipment",
+    path: "/manufacturing",
+    name: "manufacturing",
     component: Manufacturing
   }
 ];
