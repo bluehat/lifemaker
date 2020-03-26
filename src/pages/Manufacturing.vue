@@ -38,7 +38,21 @@ import devices from "../yml/devices.yml";
 import parts from "../yml/parts.yml";
 import EquipmentForm from "../components/EquipmentForm";
 import PullDown from "../components/PullDown";
-import { where, map, all, values, any, pipe, prop } from "ramda";
+import {
+  where,
+  map,
+  all,
+  values,
+  any,
+  pipe,
+  prop,
+  allPass,
+  either,
+  not,
+  curry,
+  always,
+  path
+} from "ramda";
 
 import { Parser, HtmlRenderer } from "commonmark";
 const [parser, renderer] = [new Parser(), new HtmlRenderer()];
@@ -66,23 +80,37 @@ export default {
     supportedParts: vm => {
       if (!vm.equipment) return [];
 
-      const geq = (candidate, spec) =>
+      const geq = curry((spec, candidate) =>
         where(
           map(s => v => v >= s, spec),
           candidate
-        );
+        )
+      );
 
       const evaluators = {
         printer: ({ requiredDimensions, requiresSupportMaterial }, printer) =>
-          printer.has &&
-          geq(printer.dimensions, requiredDimensions) &&
-          (!requiresSupportMaterial || printer.supportingMaterial),
+          allPass([
+            prop("has"),
+            pipe(prop("dimensions"), geq(requiredDimensions)),
+            either(
+              always(not(requiresSupportMaterial)),
+              prop("supportingMaterial")
+            )
+          ])(printer),
         cutter: ({ requiredDimensions, sheet }, cutter) =>
-          cutter.has &&
-          geq(cutter.dimensions, requiredDimensions) &&
-          (!sheet.material || vm.equipment.cutter.materials[sheet.material]),
+          allPass([
+            prop("has"),
+            pipe(prop("dimensions"), geq(requiredDimensions)),
+            either(
+              always(not(sheet.material)),
+              path(["materials", sheet.material])
+            )
+          ])(cutter),
         sewing: ({ material }, sewing) =>
-          sewing.has && (!material || sewing.materials[material])
+          allPass([
+            prop("has"),
+            either(always(not(material)), path(["materials", material]))
+          ])(sewing)
       };
 
       return vm.parts.filter(part =>
