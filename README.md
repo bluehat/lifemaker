@@ -10,8 +10,15 @@ Makers saving lives
 * Helping upload and organize documentation on how to manufacture equipment
   * https://docs.google.com/document/d/1-71FJTmI1Q1kjSDLP0EegMERjg_0kk_7UfaRE4r66Mg/preview
   * https://drive.google.com/drive/folders/17v80mLmWdSHgmpojCnGb660X7t5SeWA5
+  * https://www.facebook.com/groups/512046289743405/about/ documentation goes in /equipment/printables.md
 * Helping automate as much of the coordination as possible, since human coordinators will be limited and introduce latency
 * Any sort of design or aesthetic sensibilities whatsoever
+
+### Medical
+We need medical professionals [to help us vet technology which is not yet in use.](equipment/unvetted.md)
+
+### Coding
+* Relative pathing is just straight-up broken. Fix is supposedly at https://ilovesymposia.com/2015/01/04/some-things-i-learned-while-building-a-site-on-github-pages/
 
 Please submit pull requests
 
