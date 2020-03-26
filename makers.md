@@ -1,5 +1,5 @@
 ---
-permalink: /readme.html
+permalink: /makers.html
 ---
 
 hello world
