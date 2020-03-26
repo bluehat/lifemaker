@@ -175,6 +175,7 @@ input {
 input[type="number"] {
   width: 100%;
   box-sizing: border-box;
+  margin-top: 2px;
 }
 input[type="checkbox"] {
   height: 2em;

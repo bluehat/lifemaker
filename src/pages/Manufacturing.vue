@@ -5,7 +5,7 @@
         <h3>What equipment do you have?</h3>
       </template>
       <template v-slot:closedTitle>
-        <h3>My Equipment</h3>
+        <h3>☰ My Equipment</h3>
         <span v-if="equipment.printer.has">
           Printer
           <span class="checkmark"></span>
