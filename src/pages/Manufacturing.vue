@@ -50,8 +50,7 @@ import {
   either,
   not,
   curry,
-  always,
-  path
+  always
 } from "ramda";
 
 import { Parser, HtmlRenderer } from "commonmark";
@@ -97,19 +96,19 @@ export default {
               prop("supportingMaterial")
             )
           ])(printer),
-        cutter: ({ requiredDimensions, sheet }, cutter) =>
+        cutter: ({ requiredDimensions }, cutter) =>
           allPass([
             prop("has"),
-            pipe(prop("dimensions"), geq(requiredDimensions)),
-            either(
-              always(not(sheet.material)),
-              path(["materials", sheet.material])
-            )
+            pipe(prop("dimensions"), geq(requiredDimensions))
+            // either(
+            //   always(not(sheet.material)),
+            //   path(["materials", sheet.material])
+            // )
           ])(cutter),
-        sewing: ({ material }, sewing) =>
+        sewing: (equipment, sewing) =>
           allPass([
-            prop("has"),
-            either(always(not(material)), path(["materials", material]))
+            prop("has")
+            //either(always(not(material)), path(["materials", material]))
           ])(sewing)
       };
 
