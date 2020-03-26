@@ -1,7 +1,6 @@
 <template>
   <div id="equipment-form">
-    <h3>What's your setup like?</h3>
-    <InputSection name="3D Printer">
+    <InputSection name="I have a 3D Printer!">
       <div class="two-column">
         <div>
           <label>Long axis mm</label>
@@ -46,7 +45,7 @@
         </label>
       </div>
     </InputSection>
-    <InputSection name="Laser Cutter / Router">
+    <InputSection name="I have a Laser Cutter / Router!">
       <div class="two-column">
         <div>
           <label>Long axis mm</label>
@@ -88,7 +87,7 @@
         />Acrylic
       </label>
     </InputSection>
-    <InputSection name="Sewing">
+    <InputSection name="I can Sew!">
       <label class="check">
         <PathedInput
           @pathChange="pathChanged"

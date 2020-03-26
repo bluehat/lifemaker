@@ -24,8 +24,4 @@ export default {
 </script>
     
 <style>
-#equipment > div,
-#equipment > div > div {
-  padding-left: 1em;
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <div v-html="markdown" />
   </div>
 </template>
@@ -20,4 +20,7 @@ export default {
 </script>
 
 <style>
+.home {
+  padding-top: 2em;
+}
 </style>
