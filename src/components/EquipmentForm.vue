@@ -7,7 +7,7 @@
     >
       <div class="two-column">
         <div>
-          <label>Long axis mm</label>
+          <label>Long axis (inches)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
@@ -17,7 +17,7 @@
           />
         </div>
         <div>
-          <label>Short axis mm</label>
+          <label>Short axis (inches)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div>
-        <label>Height mm</label>
+        <label>Height (inches)</label>
         <PathedInput
           @pathChange="pathChanged"
           :object="local"
@@ -45,7 +45,7 @@
             type="checkbox"
             :path="'printer.supportingMaterial'"
             placeholder="Has Supporting Material"
-          />Has supporting material
+          />Multiple extrusion
         </label>
       </div>
     </InputSection>
@@ -56,7 +56,7 @@
     >
       <div class="two-column">
         <div>
-          <label>Long axis mm</label>
+          <label>Long axis (inches)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
@@ -66,7 +66,7 @@
           />
         </div>
         <div>
-          <label>Short axis mm</label>
+          <label>Short axis (inches)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
