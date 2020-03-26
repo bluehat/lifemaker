@@ -11,6 +11,7 @@ Makers saving lives
   - https://www.facebook.com/groups/512046289743405/about/ documentation goes in /equipment/printables.md
 - Helping automate as much of the coordination as possible, since human coordinators will be limited and introduce latency
 - Any sort of design or aesthetic sensibilities whatsoever
+- [Features](./features.md)
 
 ### Medical
 
