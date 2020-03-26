@@ -1,54 +1,35 @@
 ---
-- key: jls-b
-  name: Johnny's life-saving blob
-  documentation: http://somewhere.com/link
+- key: smf-shields
+  name: Swedish Medical Foundation Shields
+  documentation: https://www.facebook.com/groups/512046289743405/about/
   equipment:
     printer:
       requiredDimensions:
-        longAxis: 33
-        shortAxis: 32
-        height: 18
+        longAxis: 7
+        shortAxis: 6
+        height: .35
       requiresSupportMaterial: false
-- key: jls-b2
-  name: Johnny's life-saving blob v2
-  documentation: http://somewhere.com/link
+- key: mn-shields-print
+  name: Maker Nexus Shields Printed
+  documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields These are a V2 version of the Prusa shields
   equipment:
     printer:
       requiredDimensions:
-        longAxis: 33
-        shortAxis: 32
-        height: 18
-      requiresSupportMaterial: true
-- key: jls-fg
-  name: Johnny's life-saving face-guard
-  documentation: http://somewhere.com/link
-  description: |
-    #### This is awesome
-
-    **Please don't litter**
-
-    - Thanks
-    - For
-    - Drugs
+        longAxis: 9.14
+        shortAxis: 7.55
+        height: .79
+      requiresSupportMaterial: false
+      filament: PETG
+- key: mn-shields-cut
+  name: Maker Nexus Shields Cut
+  documentation: 
+  description: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
   equipment:
     cutter:
       sheet:
-        thickness: 1
-        material: acrylic
+        thickness: .020
+        material: PETG
       requiredDimensions:
-        longAxis: 33
-        shortAxis: 32
-- key: jls-m
-  name: Johnny's life-saving mask
-  documentation: http://somewhere.com/link
-  description: |
-    ##### This is awesome
+        longAxis: 9.5
+        shortAxis: 9.5
 
-    **Please don't litter**
-
-    - Thanks
-    - For
-    - Drugs
-  equipment:
-    sewing:
-      material: cotton
