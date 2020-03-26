@@ -14,7 +14,7 @@ Makers saving lives
 * Helping automate as much of the coordination as possible, since human coordinators will be limited and introduce latency
 * Any sort of design or aesthetic sensibilities whatsoever
 
-###Coding
+### Coding
 * Relative pathing is just straight-up broken. Fix is supposedly at https://ilovesymposia.com/2015/01/04/some-things-i-learned-while-building-a-site-on-github-pages/
 
 Please submit pull requests
