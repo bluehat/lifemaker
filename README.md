@@ -17,4 +17,4 @@ Please submit pull requests
 
 lifemaker.org is made using Jekyll.
 
-Here is a tutorial about getting started with [local development on Jekyll](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll).
+Here is a tutorial about getting started with [local development on Jekyll](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll). If you're having issues installing `commonmarker` see [this issue](https://github.com/github/pages-gem/issues/133#issuecomment-411918159).
