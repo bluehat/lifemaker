@@ -16,5 +16,12 @@ module.exports = {
       .use("markdown-loader")
       .loader("markdown-loader")
       .end();
+
+    config.module
+      .rule("yml")
+      .test(/\.ya?ml$/)
+      .use("js-yaml-loader")
+      .loader("js-yaml-loader")
+      .end();
   }
 };

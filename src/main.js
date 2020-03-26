@@ -1,23 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-import Home from "./pages/Home.vue";
-import Makers from "./pages/Makers.vue";
 import VueRouter from "vue-router";
+import routes from "./routes";
 
 const router = new VueRouter({
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/makers/:user",
-      name: "makers",
-      component: Makers,
-      props: true
-    }
-  ]
+  routes
 });
 
 Vue.use(VueRouter);
