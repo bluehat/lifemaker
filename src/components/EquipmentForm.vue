@@ -76,7 +76,7 @@
           />
         </div>
       </div>
-      <label class="check">
+      <!-- <label class="check">
         <PathedInput
           @pathChange="pathChanged"
           :object="local"
@@ -93,10 +93,10 @@
           :path="'cutter.materials.acrylic'"
           placeholder="Acrylic"
         />Acrylic
-      </label>
+      </label>-->
     </InputSection>
     <InputSection name="I can Sew!" :open="local.sewing.has" @toggle="open => has('sewing', open)">
-      <label class="check">
+      <!-- <label class="check">
         <PathedInput
           @pathChange="pathChanged"
           :object="local"
@@ -104,7 +104,7 @@
           :path="'sewing.materials.cotton'"
           placeholder="Cotton"
         />Cotton
-      </label>
+      </label>-->
     </InputSection>
   </div>
 </template>
@@ -175,7 +175,7 @@ input {
 input[type="number"] {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 input[type="checkbox"] {
   height: 2em;
