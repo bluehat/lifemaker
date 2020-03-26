@@ -1,16 +1,24 @@
 ---
-- key: mc
-  name: Mayo Clinic
-  documentation: http://somewhere.com/link
-  address: 777 Somewhere USA
+- key: shf
+  name: Swedish Hospital Foundation
+  documentation: https://www.facebook.com/groups/512046289743405/about/
+  address: Jennifer Blitz, Swedish Hospital Foundation, 5145 N California Ave, Chicago IL 60625 
   latlong:
-    - 36.6437
-    - 93.2185
+    - 41.975208
+    - -87.698410
   description: |-
-    ya
-    ya
+    Swedish Hospital Foundation requests that you include your name, address and email so the hospital can send a thank you. They would also like a phone number.
   parts:
-    - jls-b
-    - jls-m
-  devices:
-    - yya-tt
+    - smf-shields
+- key: mn
+  name: Maker Nexus
+  documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
+  address: Maker Nexus, 234 E. Carribean Drive, Sunnyvale, CA 94089
+  latlong:
+    - 37.415980
+    - -122.015290
+  description: |-
+    Please contact them, they have internal systems.
+  parts:
+    - mn-shields-printed
+	- mn-shields-cut
