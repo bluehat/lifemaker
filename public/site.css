@@ -68,3 +68,30 @@ ul {
 li {
   list-style: disc;
 }
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.spec > div {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.spec > div > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
+
+.spec > div > div > span,
+.spec > div > div > strong {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
