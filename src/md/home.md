@@ -6,15 +6,15 @@ This website attempts to help develop supply chains to formalize and scale this 
 
 - For makers and maker groups
   - Who have access to one of the following
-    - [3D printer](equipment/printables.md)
-    - [Laser cutter](equipment/cuttables.md)
-    - [Sewwing machine](quipment/sewwables.md)
-  - Who are willing [to open and modify existing electronic devices](equipment/hackables.md)
+    - [3D printer](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/printables.md)
+    - [Laser cutter](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/cuttables.md)
+    - [Sewwing machine](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/sewwables.md)
+  - Who are willing [to open and modify existing electronic devices](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/hackables.md)
 - For waypoints (places already working with healthcare professionals and who are interested in getting help from other makers to scale up their manufacturing capacity)
 - For healthcare providers who need equipment
 - For people who can help with or source supplies to manufacture equipment
 - For coordination volunteers who are willing to help introduce and coordinate makers, waypoints, healthcare providers, and suppliers
-- [For website volunteers](readme.html) such as coders, designers, and technical writers.
+- [For website volunteers](https://github.com/bluehat/lifemaker/blob/master/README.md) such as coders, designers, and technical writers.
 
 ### Coordination
 
@@ -53,4 +53,4 @@ Ideally, we will help you coordinate with a broader effort in your geographic co
 
 ### Help needed for this website
 
-We need designers, people who like organizing things, technical writers, people who aren't afraid of talking on the phones, medical professionals willing to help vet new designed for technology, and many more kinds of folks. [Please help.](readme.md)
+We need designers, people who like organizing things, technical writers, people who aren't afraid of talking on the phones, medical professionals willing to help vet new designed for technology, and many more kinds of folks. [Please help.](https://github.com/bluehat/lifemaker/blob/master/README.md)
