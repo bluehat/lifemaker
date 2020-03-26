@@ -12,3 +12,7 @@ Makers saving lives
 * Any sort of design or aesthetic sensibilities whatsoever
 
 Please submit pull requests
+
+lifemaker.org is made using Jekyll.
+
+Here is a tutorial about getting started with [local development on Jekyll](https://help.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll).
