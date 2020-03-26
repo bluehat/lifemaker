@@ -8,8 +8,9 @@ This website attempts to help develop supply chains to formalize and scale this 
   - Who have access to one of the following
     - [3D printer](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/printables.md)
     - [Laser cutter](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/cuttables.md)
-    - [Sewwing machine](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/sewwables.md)
+    - [Sewing machine](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/sewables.md)
   - Who are willing [to open and modify existing electronic devices](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/hackables.md)
+
 - For waypoints (places already working with healthcare professionals and who are interested in getting help from other makers to scale up their manufacturing capacity)
 - For healthcare providers who need equipment
 - For people who can help with or source supplies to manufacture equipment
