@@ -24,6 +24,6 @@ We need medical professionals [to help us vet technology which is not yet in use
 
 Please submit pull requests
 
-lifemaker.org is made using [VueJs](https://vuejs.org/) and [vue-router](https://router.vuejs.org/)
+lifemaker.org is made using [VueJs](https://vuejs.org/) and [vue-router](https://router.vuejs.org/). You'll need to install the [Vue CLI](https://cli.vuejs.org/guide/installation.html).
 
 Static content is defined within [src/md](./src/md) (see [home](./src/md/home.md))
