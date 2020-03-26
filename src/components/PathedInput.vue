@@ -1,5 +1,5 @@
 <template>
-  <input @input="onInput" :value="value" />
+  <input @input="onInput" :value="value" :checked="value" />
 </template>
 
 <script>
