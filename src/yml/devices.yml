@@ -1,0 +1,19 @@
+---
+- key: yya-tt
+  name: ya ya a thousand times
+  documentation: http://somewhere.com/link
+  description: |-
+    ya
+    ya
+  parts:
+    Johnny's life-saving mask: 2
+    Johnny's life-saving face-guard: 1
+- key: ya
+  name: ya
+  documentation: http://somewhere.com/link
+  description: |-
+    ya
+    ya
+  parts:
+    Johnny's life-saving mask: 2
+    Johnny's life-saving face-guard: 1

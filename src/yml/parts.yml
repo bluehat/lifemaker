@@ -1,0 +1,44 @@
+---
+- key: jls-b
+  name: Johnny's life-saving blob
+  documentation: http://somewhere.com/link
+  equipment:
+    printer:
+      requiredDimensions:
+        longAxis: 33
+        shortAxis: 32
+        height: 18
+      requiresSupportMaterial: false
+- key: jls-fg
+  name: Johnny's life-saving face-guard
+  documentation: http://somewhere.com/link
+  description: |
+    #### This is awesome
+
+    **Please don't litter**
+
+    - Thanks
+    - For
+    - Drugs
+  equipment:
+    cutter:
+      sheet:
+        thickness: 1
+        material: steel
+      requiredDimensions:
+        longAxis: 33
+        shortAxis: 32
+- key: jls-m
+  name: Johnny's life-saving mask
+  documentation: http://somewhere.com/link
+  description: |
+    ##### This is awesome
+
+    **Please don't litter**
+
+    - Thanks
+    - For
+    - Drugs
+  manufacturing:
+    sewing:
+      material: cloth
