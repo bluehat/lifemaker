@@ -1,7 +1,11 @@
 <template>
-  <div :class="{'pull-down': true, open}">
-    <h3 v-if="!open" @click="$emit('toggle')">{{closedTitle}}</h3>
-    <h3 v-if="open" @click="$emit('toggle')">{{openTitle}}</h3>
+  <div :class="{'pull-down': true, open}" @click="!open ? $emit('toggle') : null">
+    <div v-if="!open">
+      <slot name="closedTitle"></slot>
+    </div>
+    <div v-if="open" @click.stop="$emit('toggle')">
+      <slot name="openTitle"></slot>
+    </div>
     <div class="pd-content">
       <slot></slot>
     </div>
@@ -21,7 +25,7 @@ export default {
   cursor: pointer;
 }
 
-.pull-down h3:hover {
+.pull-down:not(.open):hover h3 {
   text-decoration: underline;
 }
 
@@ -33,6 +37,10 @@ export default {
 
 .pd-content {
   overflow: hidden;
+}
+
+.pull-down:not(.open) {
+  cursor: pointer;
 }
 
 .pull-down:not(.open) .pd-content {
