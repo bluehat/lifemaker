@@ -4,10 +4,12 @@ This website attempts to help develop supply chains to formalize and scale this 
 
 ### Directions for different groups
 
-- For makers and maker groups who have access to one of the following
-  - 3D printer
-  - Laser cutter
-  - Sewwing machine
+- For makers and maker groups
+  - Who have access to one of the following
+    - [3D printer](equipment/printables.md)
+    - [Laser cutter](equipment/cuttables.md)
+    - [Sewwing machine](quipment/sewwables.md)
+  - Who are willing [to open and modify existing electronic devices](equipment/hackables.md)
 - For waypoints (places already working with healthcare professionals and who are interested in getting help from other makers to scale up their manufacturing capacity)
 - For healthcare providers who need equipment
 - For people who can help with or source supplies to manufacture equipment
@@ -51,8 +53,4 @@ Ideally, we will help you coordinate with a broader effort in your geographic co
 
 ### Help needed for this website
 
-- Making this information more readable than a giant list
-- Finding healthcare institutions interested in equipment
-- Finding communities interested in making equipment
-- Helping upload and organize documentation on how to manufacture equipment
-- Manually introducing healtcare institutions and makers
+We need designers, people who like organizing things, technical writers, people who aren't afraid of talking on the phones, medical professionals willing to help vet new designed for technology, and many more kinds of folks. [Please help.](readme.md)
