@@ -1,6 +1,10 @@
 <template>
   <div id="equipment-form">
-    <InputSection name="I have a 3D Printer!">
+    <InputSection
+      name="I have a 3D Printer!"
+      :open="local.printer.has"
+      @toggle="open => has('printer', open)"
+    >
       <div class="two-column">
         <div>
           <label>Long axis mm</label>
@@ -45,7 +49,11 @@
         </label>
       </div>
     </InputSection>
-    <InputSection name="I have a Laser Cutter / Router!">
+    <InputSection
+      name="I have a Laser Cutter / Router!"
+      :open="local.cutter.has"
+      @toggle="open => has('cutter', open)"
+    >
       <div class="two-column">
         <div>
           <label>Long axis mm</label>
@@ -87,7 +95,7 @@
         />Acrylic
       </label>
     </InputSection>
-    <InputSection name="I can Sew!">
+    <InputSection name="I can Sew!" :open="local.sewing.has" @toggle="open => has('sewing', open)">
       <label class="check">
         <PathedInput
           @pathChange="pathChanged"
@@ -108,6 +116,7 @@ import { assocPath } from "ramda";
 
 const defaultSetup = () => ({
   printer: {
+    has: false,
     dimensions: {
       longAxis: undefined,
       shortAxis: undefined,
@@ -116,6 +125,7 @@ const defaultSetup = () => ({
     supportingMaterial: false
   },
   cutter: {
+    has: false,
     materials: { lexan: false, acrylic: false },
     dimensions: {
       longAxis: undefined,
@@ -123,6 +133,7 @@ const defaultSetup = () => ({
     }
   },
   sewing: {
+    has: false,
     materials: { cotton: false }
   }
 });
@@ -137,6 +148,9 @@ export default {
   methods: {
     pathChanged({ path, value }) {
       this.$emit("input", assocPath(path, value, this.local));
+    },
+    has(equipment, doesHave) {
+      this.$emit("input", assocPath([equipment, "has"], doesHave, this.local));
     }
   }
 };

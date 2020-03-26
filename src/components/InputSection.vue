@@ -1,6 +1,6 @@
 <template>
   <div :class="{section: true, [state]: true}">
-    <div class="title" @click="state = state === 'open' ? 'closed': 'open'">
+    <div class="title" @click="toggle">
       <h4>
         <span class="bracket">{{bracket}}</span>
         <span class="main">{{name}}</span>
@@ -12,12 +12,19 @@
 
 <script>
 export default {
-  props: ["name"],
+  props: ["name", "open"],
   name: "InputSection",
   computed: {
-    bracket: vm => (vm.state === "open" ? "✓" : "")
+    bracket: vm => (vm.state === "open" ? "✓" : ""),
+    state: vm => (vm.open ? "open" : "closed")
   },
-  data: () => ({ state: "closed" })
+
+  methods: {
+    toggle() {
+      if (this.state === "open") this.$emit("toggle", false);
+      else this.$emit("toggle", true);
+    }
+  }
 };
 </script>
     

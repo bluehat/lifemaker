@@ -1,11 +1,24 @@
 <template>
   <div id="equipment">
-    <PullDown
-      :open="equipmentOpen"
-      @toggle="equipmentOpen = !equipmentOpen"
-      closedTitle="Equipment"
-      openTitle="What equipment do you have?"
-    >
+    <PullDown :open="equipmentOpen" @toggle="equipmentOpen = !equipmentOpen">
+      <template v-slot:openTitle>
+        <h3>What equipment do you have?</h3>
+      </template>
+      <template v-slot:closedTitle>
+        <h3>Equipment</h3>
+        <span v-if="equipment.printer.has">
+          Printer
+          <span class="checkmark"></span>
+        </span>
+        <span v-if="equipment.cutter.has">
+          Cutter
+          <span class="checkmark"></span>
+        </span>
+        <span v-if="equipment.sewing.has">
+          Sewing
+          <span class="checkmark"></span>
+        </span>
+      </template>
       <EquipmentForm v-model="equipment" />
     </PullDown>
     <div v-if="supportedParts.length === 0">
@@ -25,7 +38,7 @@ import devices from "../yml/devices.yml";
 import parts from "../yml/parts.yml";
 import EquipmentForm from "../components/EquipmentForm";
 import PullDown from "../components/PullDown";
-import { where, map, all } from "ramda";
+import { where, map, all, values, any, pipe, prop } from "ramda";
 
 import { Parser, HtmlRenderer } from "commonmark";
 const [parser, renderer] = [new Parser(), new HtmlRenderer()];
@@ -36,6 +49,14 @@ const parseDescriptions = list =>
     description:
       item.description && renderer.render(parser.parse(item.description))
   }));
+
+const saveEquipment = equipment =>
+  localStorage.setItem("saved-equipment", JSON.stringify(equipment));
+
+const loadStoredEquipment = () => {
+  const stored = localStorage.getItem("saved-equipment");
+  return stored && JSON.parse(stored);
+};
 
 export default {
   name: "Home",
@@ -52,27 +73,48 @@ export default {
         );
 
       const evaluators = {
-        printer: ({ requiredDimensions, requiresSupportMaterial }) =>
-          geq(vm.equipment.printer.dimensions, requiredDimensions) &&
-          (!requiresSupportMaterial || vm.equipment.printer.supportingMaterial),
-        cutter: ({ requiredDimensions, sheet }) =>
-          geq(vm.equipment.cutter.dimensions, requiredDimensions) &&
+        printer: ({ requiredDimensions, requiresSupportMaterial }, printer) =>
+          printer.has &&
+          geq(printer.dimensions, requiredDimensions) &&
+          (!requiresSupportMaterial || printer.supportingMaterial),
+        cutter: ({ requiredDimensions, sheet }, cutter) =>
+          cutter.has &&
+          geq(cutter.dimensions, requiredDimensions) &&
           (!sheet.material || vm.equipment.cutter.materials[sheet.material]),
-        sewing: ({ material }) =>
-          !material || vm.equipment.sewing.materials[material]
+        sewing: ({ material }, sewing) =>
+          sewing.has && (!material || sewing.materials[material])
       };
 
       return vm.parts.filter(part =>
-        all(([k, v]) => evaluators[k](v), Object.entries(part.equipment))
+        all(
+          ([k, v]) => evaluators[k](v, vm.equipment[k]),
+          Object.entries(part.equipment)
+        )
       );
     }
   },
   components: { EquipmentForm, PullDown },
-  data: () => ({ equipment: null, equipmentOpen: true })
+  created() {
+    if (pipe(values, any(prop("has")))(this.equipment))
+      this.equipmentOpen = false;
+  },
+  data: () => ({ equipment: loadStoredEquipment(), equipmentOpen: true }),
+  watch: {
+    equipment() {
+      saveEquipment(this.equipment);
+    }
+  }
 };
 </script>
     
 <style>
+.checkmark {
+  color: #3a3;
+}
+.checkmark::after {
+  content: "✓";
+}
+
 #equipment {
   display: relative;
 }
