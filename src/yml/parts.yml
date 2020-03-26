@@ -9,6 +9,16 @@
         shortAxis: 32
         height: 18
       requiresSupportMaterial: false
+- key: jls-b2
+  name: Johnny's life-saving blob v2
+  documentation: http://somewhere.com/link
+  equipment:
+    printer:
+      requiredDimensions:
+        longAxis: 33
+        shortAxis: 32
+        height: 18
+      requiresSupportMaterial: true
 - key: jls-fg
   name: Johnny's life-saving face-guard
   documentation: http://somewhere.com/link
@@ -24,7 +34,7 @@
     cutter:
       sheet:
         thickness: 1
-        material: steel
+        material: acrylic
       requiredDimensions:
         longAxis: 33
         shortAxis: 32
@@ -41,4 +51,4 @@
     - Drugs
   equipment:
     sewing:
-      material: cloth
+      material: cotton
