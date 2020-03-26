@@ -11,7 +11,7 @@ This website attempts to help develop supply chains to formalize and scale this 
 * For healthcare providers who need equipment
 * For people who can help with or source supplies to manufacture equipment
 * For coordination volunteers who are willing to help introduce and coordinate makers, waypoints, healthcare providers, and suppliers
-* [For website volunteers](readme.md) such as coders, designers, and technical writers.
+* [For website volunteers](readme.html) such as coders, designers, and technical writers.
 
 ### Coordination
 
