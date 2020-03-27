@@ -4,18 +4,13 @@ This website attempts to help develop supply chains to formalize and scale this 
 
 ### Directions for different groups
 
-- For makers and maker groups
-  - Who have access to one of the following
-    - [3D printer](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/printables.md)
-    - [Laser cutter](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/cuttables.md)
-    - [Sewing machine](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/sewables.md)
-  - Who are willing [to open and modify existing electronic devices](https://github.com/bluehat/lifemaker/tree/master/src/md/equipment/hackables.md)
+- [For makers and maker groups](./#manufacturing)
 
 - For waypoints (places already working with healthcare professionals and who are interested in getting help from other makers to scale up their manufacturing capacity)
 - For healthcare providers who need equipment
 - For people who can help with or source supplies to manufacture equipment
 - For coordination volunteers who are willing to help introduce and coordinate makers, waypoints, healthcare providers, and suppliers
-- [For website volunteers](https://github.com/bluehat/lifemaker/blob/master/README.md) such as coders, designers, and technical writers.
+- [For website volunteers](./#readme) such as coders, designers, people who aren't afraid to talk on the phone, medical professionals prepared to give feedback on new designs, and technical writers.
 
 ### Coordination
 
@@ -23,37 +18,12 @@ This website attempts to help develop supply chains to formalize and scale this 
 
 - [Massachusetts General Hospital](https://www.nbcboston.com/news/coronavirus/mgh-desperately-needs-supplies-president-says/2094292/) has put out a call for 3D-printed masks. Request is from the hospital president: Dr. Peter Slavin.
 
-#### Communities already making equipment
-
-- [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is manufacturing face masks, face shields, and hospital scrubs.
-  - Items are made at home, mailed to the makerspace, and then re-sanitized there.
-- Worcester Polytechnic Institute
-
-#### Locations to send things
-
-##### Please always wear a mask and gloves, and do not make things if you have symptoms of any illness. Please see the guidelines of each group for more info
-
-- [Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) is accepting and distributing masks, face fields, and hospital scrubs. They work by mail.
-- [A Chicago group](https://www.facebook.com/groups/512046289743405/about/) is willing to handle the laser cut parts if people can do the 3D printed ones
-  - Locals: Drop things off at the makerspace
-  - Out-of-town: mail them directly to the Swedish Hospital Foundation
-
-#### Communities which would like to make equipment
-
-Educational institutuions welcome
-
 #### Individuals who would like to make equipment
 
 Ideally, we will help you coordinate with a broader effort in your geographic community, but for now we're just collecting some form of contact information.
 
 Here is a [google form](https://docs.google.com/spreadsheets/d/1QE1vzezYdf6QJwxaMMLrWIks5AYAPUeSRWXxaYd3yK8/edit#gid=587452832) (not affiliated with us) where people with printers are volunteering to help.
 
-### Technical bits
+#### Other resources
+There are [other folks doing great work too.](./#other_resources)
 
-#### How to manufacture equipment
-
-[Maker Nexus of Sunnyvale California](http://makernexuswiki.com/index.php?title=MN_COVID_Response) has tutorials for face masks, 3D-printed face shields, and hospital scrubs.
-
-### Help needed for this website
-
-We need designers, people who like organizing things, technical writers, people who aren't afraid of talking on the phones, medical professionals willing to help vet new designed for technology, and many more kinds of folks. [Please help.](https://github.com/bluehat/lifemaker/blob/master/README.md)
