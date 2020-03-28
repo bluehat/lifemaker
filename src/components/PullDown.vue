@@ -33,6 +33,7 @@ export default {
   background: #e4e4e4;
   padding: 1em;
   position: relative;
+  border-radius: 0 0 5px 5px;
 }
 
 .pd-content {
