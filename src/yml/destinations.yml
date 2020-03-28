@@ -2,7 +2,7 @@
 - key: shf
   name: Swedish Hospital Foundation
   documentation: https://www.facebook.com/groups/512046289743405/about/
-  address: Jennifer Blitz, Swedish Hospital Foundation, 5145 N California Ave, Chicago IL 60625 
+  address: Jennifer Blitz, Swedish Hospital Foundation, 5145 N California Ave, Chicago IL 60625
   latlong:
     - 41.975208
     - -87.698410
@@ -21,4 +21,4 @@
     Please contact them, they have internal systems.
   parts:
     - mn-shields-printed
-	- mn-shields-cut
+    - mn-shields-cut

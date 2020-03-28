@@ -3,6 +3,7 @@ import Makers from "./pages/Makers.vue";
 import Manufacturing from "./pages/Manufacturing.vue";
 import Readme from "./pages/Readme.vue";
 import Other_resources from "./pages/Other_resources.vue";
+import Part from "./pages/Part.vue";
 
 export default [
   {
@@ -30,5 +31,11 @@ export default [
     path: "/other_resources",
     name: "other_resources",
     component: Other_resources
+  },
+  {
+    path: "/parts/:partKey",
+    name: "Part",
+    component: Part,
+    props: true
   }
 ];
