@@ -11,10 +11,18 @@
       <div v-if="destination.description" v-html="destination.description" />
     </div>
     <div class="destination-parts">
-      <h5>Needs:</h5>
+      <h5>Needed parts:</h5>
       <ul>
         <li v-for="part of parts" :key="part.key">
           <router-link :to="{name: 'part', params: {partKey: part.key}}">{{part.name}}</router-link>
+        </li>
+      </ul>
+    </div>
+    <div class="destination-devices">
+      <h5>Needed devices:</h5>
+      <ul>
+        <li v-for="device of devices" :key="device.key">
+          <router-link :to="{name: 'device', params: {deviceKey: device.key}}">{{device.name}}</router-link>
         </li>
       </ul>
     </div>
@@ -24,6 +32,7 @@
 <script>
 import { parseDescriptions } from "../tools/markdown";
 import parts from "../yml/parts.yml";
+import devices from "../yml/devices.yml";
 import destinations from "../yml/destinations.yml";
 import { pipe, filter, head } from "ramda";
 
@@ -37,7 +46,9 @@ export default {
         parseDescriptions,
         head
       )(destinations),
-    parts: vm => filter(part => vm.destination.parts.includes(part.key))(parts)
+    parts: vm => filter(part => vm.destination.parts.includes(part.key))(parts),
+    devices: vm =>
+      filter(device => vm.destination.devices.includes(device.key))(devices)
   },
   data: () => ({})
 };

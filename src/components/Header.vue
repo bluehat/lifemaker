@@ -7,8 +7,8 @@
       <h2>Makers saving lives</h2>
       <a id="github" href="https://github.com/bluehat/lifemaker">View on GitHub</a>
       <div class="navigation">
-        <router-link :to="{name: 'manufacturing'}">Parts to make</router-link>
-        <router-link :to="{name: 'destinations'}">Places to send them</router-link>
+        <router-link :to="{name: 'manufacturing'}">For makers</router-link>
+        <router-link :to="{name: 'devices'}">For healthcare providers</router-link>
         <router-link :to="{name: 'safety'}">Safety</router-link>
         <router-link :to="{name: 'home'}">About</router-link>
       </div>

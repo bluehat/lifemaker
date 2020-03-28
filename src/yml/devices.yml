@@ -3,6 +3,7 @@
   name: Maker Nexus face shield
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
   description: Both parts of the mask together
+  image: http://makernexuswiki.com/images/thumb/1/14/Face_shield_front.jpg/450px-Face_shield_front.jpg
   parts:
     mn-shields-cut: 1
     mn-shields-print: 1

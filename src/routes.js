@@ -3,6 +3,8 @@ import Md from "./pages/Md.vue";
 import Part from "./pages/Part.vue";
 import Destination from "./pages/Destination.vue";
 import Destinations from "./pages/Destinations.vue";
+import Devices from "./pages/Devices.vue";
+import Device from "./pages/Device.vue";
 
 const markdownPage = (markdown, path) => ({
   path: path || `/${markdown}`,
@@ -28,6 +30,12 @@ export default [
     props: true
   },
   {
+    path: "/devices/:deviceKey",
+    name: "device",
+    component: Device,
+    props: true
+  },
+  {
     path: "/destinations/:destinationKey",
     name: "destination",
     component: Destination,
@@ -37,5 +45,10 @@ export default [
     path: "/destinations",
     name: "destinations",
     component: Destinations
+  },
+  {
+    path: "/devices",
+    name: "devices",
+    component: Devices
   }
 ];

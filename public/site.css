@@ -95,3 +95,20 @@ li {
   flex-direction: column;
   flex-basis: 100%;
 }
+
+.external-link {
+  background-image: url("/iconmonstr-share-11.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: solid 2px #0f79d000;
+  margin-left: 0.5em;
+  height: 1.2em;
+  width: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.external-link:hover {
+  border-bottom: solid 2px #0f79d0;
+}
