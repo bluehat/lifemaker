@@ -31,7 +31,7 @@
     </div>
     <div v-for="part of supportedParts" :key="part.key">
       <h4 :style="{'margin-bottom': 0}">
-        <router-link :to="{name: 'Part', params: {partKey: part.key}}">{{part.name}}</router-link>
+        <router-link :to="{name: 'part', params: {partKey: part.key}}">{{part.name}}</router-link>
       </h4>
       <div>
         <span class="checkmark"></span>
