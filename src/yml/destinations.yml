@@ -20,5 +20,5 @@
   description: |-
     Please contact them, they have internal systems.
   parts:
-    - mn-shields-printed
+    - mn-shields-print
     - mn-shields-cut

@@ -5,6 +5,7 @@ import Readme from "./pages/Readme.vue";
 import Other_resources from "./pages/Other_resources.vue";
 import Part from "./pages/Part.vue";
 import Destination from "./pages/Destination.vue";
+import Destinations from "./pages/Destinations.vue";
 
 export default [
   {
@@ -44,5 +45,10 @@ export default [
     name: "destination",
     component: Destination,
     props: true
+  },
+  {
+    path: "/destinations",
+    name: "destinations",
+    component: Destinations
   }
 ];
