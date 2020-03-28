@@ -4,35 +4,18 @@ import Part from "./pages/Part.vue";
 import Destination from "./pages/Destination.vue";
 import Destinations from "./pages/Destinations.vue";
 
-const staticPages = [
-  {
-    path: "/",
-    name: "home",
-    component: Md,
-    props: { page: "home" }
-  },
-  {
-    path: "/readme",
-    name: "readme",
-    component: Md,
-    props: { page: "readme" }
-  },
-  {
-    path: "/other_resources",
-    name: "other_resources",
-    component: Md,
-    props: { page: "other_resources" }
-  },
-  {
-    path: "/safety",
-    name: "safety",
-    component: Md,
-    props: { page: "safety" }
-  }
-];
+const markdownPage = (markdown, path) => ({
+  path: path || `/${markdown}`,
+  name: markdown,
+  component: Md,
+  props: { page: markdown }
+});
 
 export default [
-  ...staticPages,
+  markdownPage("home", "/"),
+  markdownPage("readme"),
+  markdownPage("other_resources"),
+  markdownPage("safety"),
   {
     path: "/manufacturing",
     name: "manufacturing",
