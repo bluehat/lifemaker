@@ -9,9 +9,8 @@
   description: |-
     Swedish Hospital Foundation requests that you include your name, address and email so the hospital can send a thank you. They would also like a phone number.
   parts:
-    - smf-shields
-  devices:
-    - mn-shield
+    - smf-shields-print
+  devices: []
 - key: mn
   name: Maker Nexus
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
@@ -24,4 +23,5 @@
   parts:
     - mn-shields-print
     - mn-shields-cut
-  devices: []
+  devices:
+    - mn-shield

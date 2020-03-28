@@ -3,7 +3,7 @@
     <h3>Available devices</h3>
     <p>
       These devices are being manufactured to help healthcare providers. If you need any of these devices for your hospital or clinic,
-      <a>contact us!</a>
+      <a href="mailto:healthcare@lifemaker.org?subject=Request for Equipment">contact us!</a>
     </p>
     <div v-for="device of devices" :key="device.key" class="list">
       <img :src="device.image" />
