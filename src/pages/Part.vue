@@ -1,5 +1,11 @@
 <template>
   <div class="part">
+    <div class="safety-warning">
+      <span>
+        Please review the
+        <router-link :to="{name: 'safety'}">safety guidelines</router-link>!
+      </span>
+    </div>
     <h4 :style="{'margin-bottom': 0}">
       {{part.name}}
       <a class="external-link" :href="part.documentation"></a>
@@ -105,5 +111,18 @@ export default {
 
 .part-equipment h5 {
   margin: 0;
+}
+
+.safety-warning {
+  text-align: right;
+}
+
+.safety-warning span {
+  display: inline-block;
+  background: rgb(55, 55, 55);
+  color: white;
+  padding: 0.5em;
+  border-radius: 0 0 0.3em 0.3em;
+  font-weight: bold;
 }
 </style>
