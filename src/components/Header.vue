@@ -4,6 +4,11 @@
       <h1>lifemaker</h1>
       <h2>Makers saving lives</h2>
       <a id="github" href="https://github.com/bluehat/lifemaker">View on GitHub</a>
+      <div class="navigation">
+        <router-link :to="{name: 'manufacturing'}">Parts to make</router-link>
+        <router-link :to="{name: 'destinations'}">Places to send them</router-link>
+        <router-link :to="{name: 'home'}">About</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -37,5 +42,27 @@ a#github {
   padding: 0.8em 3em 0.8em 0.7em;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+.navigation a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 0.5em;
+}
+
+.navigation a.router-link-exact-active {
+  text-decoration: underline;
+}
+
+.navigation a:not(:first-child) {
+  padding-left: 0.5em;
+  border-left: solid 2px #bbb;
 }
 </style>

@@ -14,7 +14,9 @@
       <h5>Needed by:</h5>
       <ul>
         <li v-for="destination of destinations" :key="destination.key">
-          <a :href="destination.documentation">{{destination.name}}</a>
+          <router-link
+            :to="{name: 'destination', params: {destinationKey: destination.key}}"
+          >{{destination.name}}</router-link>
         </li>
       </ul>
     </div>
@@ -32,7 +34,7 @@ import parts from "../yml/parts.yml";
 import PrinterSpec from "../components/PrinterSpec";
 import CutterSpec from "../components/CutterSpec";
 import destinations from "../yml/destinations.yml";
-import { values, any, pipe, prop, filter, head } from "ramda";
+import { pipe, filter, head } from "ramda";
 
 export default {
   props: ["partKey"],
@@ -48,10 +50,6 @@ export default {
       filter(dest => dest.parts.includes(vm.partKey))(destinations)
   },
   components: { PrinterSpec, CutterSpec },
-  created() {
-    if (pipe(values, any(prop("has")))(this.equipment))
-      this.equipmentOpen = false;
-  },
   data: () => ({})
 };
 </script>

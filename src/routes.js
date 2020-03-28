@@ -4,6 +4,7 @@ import Manufacturing from "./pages/Manufacturing.vue";
 import Readme from "./pages/Readme.vue";
 import Other_resources from "./pages/Other_resources.vue";
 import Part from "./pages/Part.vue";
+import Destination from "./pages/Destination.vue";
 
 export default [
   {
@@ -34,8 +35,14 @@ export default [
   },
   {
     path: "/parts/:partKey",
-    name: "Part",
+    name: "part",
     component: Part,
+    props: true
+  },
+  {
+    path: "/destinations/:destinationKey",
+    name: "destination",
+    component: Destination,
     props: true
   }
 ];
