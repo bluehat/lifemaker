@@ -31,22 +31,23 @@
     </div>
     <div v-for="part of supportedParts" :key="part.key">
       <h4 :style="{'margin-bottom': 0}">
-        <a :href="part.documentation">{{part.name}}</a>
+        <router-link :to="{name: 'Part', params: {partKey: part.key}}">{{part.name}}</router-link>
       </h4>
-      <CutterSpec v-if="part.equipment.cutter" :spec="part.equipment.cutter" />
-      <PrinterSpec v-if="part.equipment.printer" :spec="part.equipment.printer" />
+      <div>
+        <span class="checkmark"></span>
+        Your {{part.equipment.cutter ? 'Cutter' : '3D Printer'}} is compatable!
+      </div>
       <div v-html="part.description"></div>
     </div>
   </div>
 </template>
 
 <script>
+import { parseDescriptions } from "../tools/markdown";
 import devices from "../yml/devices.yml";
 import parts from "../yml/parts.yml";
 import EquipmentForm from "../components/EquipmentForm";
 import PullDown from "../components/PullDown";
-import PrinterSpec from "../components/PrinterSpec";
-import CutterSpec from "../components/CutterSpec";
 
 import {
   where,
@@ -63,16 +64,6 @@ import {
   always
 } from "ramda";
 
-import { Parser, HtmlRenderer } from "commonmark";
-const [parser, renderer] = [new Parser(), new HtmlRenderer()];
-
-const parseDescriptions = list =>
-  list.map(item => ({
-    ...item,
-    description:
-      item.description && renderer.render(parser.parse(item.description))
-  }));
-
 const saveEquipment = equipment =>
   localStorage.setItem("saved-equipment", JSON.stringify(equipment));
 
@@ -82,7 +73,7 @@ const loadStoredEquipment = () => {
 };
 
 export default {
-  name: "Home",
+  name: "Manufacturing",
   computed: {
     parts: () => parseDescriptions(parts),
     devices: () => parseDescriptions(devices),
@@ -130,7 +121,7 @@ export default {
       );
     }
   },
-  components: { EquipmentForm, PullDown, PrinterSpec, CutterSpec },
+  components: { EquipmentForm, PullDown },
   created() {
     if (pipe(values, any(prop("has")))(this.equipment))
       this.equipmentOpen = false;

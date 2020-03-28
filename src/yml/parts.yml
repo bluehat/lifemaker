@@ -12,6 +12,9 @@
 - key: mn-shields-print
   name: Maker Nexus Shields Printed
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields These are a V2 version of the Prusa shields
+  description: |
+    These face shields can protect medical staff while they assist
+    high-risk patients.
   equipment:
     printer:
       requiredDimensions:
@@ -23,6 +26,7 @@
 - key: mn-shields-cut
   name: Maker Nexus Shields Cut
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
+  image: http://makernexuswiki.com/images/thumb/1/14/Face_shield_front.jpg/450px-Face_shield_front.jpg
   description: |
     These face shields can protect medical staff while they assist
     high-risk patients.
