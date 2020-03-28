@@ -1,38 +1,42 @@
-import Home from "./pages/Home.vue";
-import Makers from "./pages/Makers.vue";
 import Manufacturing from "./pages/Manufacturing.vue";
-import Readme from "./pages/Readme.vue";
-import Other_resources from "./pages/Other_resources.vue";
+import Md from "./pages/Md.vue";
 import Part from "./pages/Part.vue";
 import Destination from "./pages/Destination.vue";
 import Destinations from "./pages/Destinations.vue";
 
-export default [
+const staticPages = [
   {
     path: "/",
     name: "home",
-    component: Home
-  },
-  {
-    path: "/makers/:user",
-    name: "makers",
-    component: Makers,
-    props: true
-  },
-  {
-    path: "/manufacturing",
-    name: "manufacturing",
-    component: Manufacturing
+    component: Md,
+    props: { page: "home" }
   },
   {
     path: "/readme",
     name: "readme",
-    component: Readme
+    component: Md,
+    props: { page: "readme" }
   },
   {
     path: "/other_resources",
     name: "other_resources",
-    component: Other_resources
+    component: Md,
+    props: { page: "other_resources" }
+  },
+  {
+    path: "/safety",
+    name: "safety",
+    component: Md,
+    props: { page: "safety" }
+  }
+];
+
+export default [
+  ...staticPages,
+  {
+    path: "/manufacturing",
+    name: "manufacturing",
+    component: Manufacturing
   },
   {
     path: "/parts/:partKey",

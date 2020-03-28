@@ -7,6 +7,7 @@
       <div class="navigation">
         <router-link :to="{name: 'manufacturing'}">Parts to make</router-link>
         <router-link :to="{name: 'destinations'}">Places to send them</router-link>
+        <router-link :to="{name: 'safety'}">Safety</router-link>
         <router-link :to="{name: 'home'}">About</router-link>
       </div>
     </div>
