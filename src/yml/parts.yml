@@ -1,7 +1,10 @@
 ---
-- key: smf-shields
-  name: Swedish Medical Foundation Shields
+- key: smf-shields-print
+  name: Printed component of a Swedish Shield
   documentation: https://www.facebook.com/groups/512046289743405/about/
+  description: |
+    Currently, this is the only component needed by Swedish
+    A local group is handling the front portion and the ties
   equipment:
     printer:
       requiredDimensions:
@@ -10,7 +13,7 @@
         height: .35
       requiresSupportMaterial: false
 - key: mn-shields-print
-  name: Maker Nexus Shields Printed
+  name: Printed top of a Maker Nexus shield
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields These are a V2 version of the Prusa shields
   description: |
     These face shields can protect medical staff while they assist
@@ -23,13 +26,52 @@
         height: .79
       requiresSupportMaterial: false
       filament: PETG
+- key: pr-shields-print
+  name: Printed top of a prusa shield
+  documentation: https://www.prusaprinters.org/prints/25857
+  description: |
+    The printed top portion of a prusa shield.
+  equipment:
+    printer:
+      requiredDimensions:
+        longAxis: 7.52
+        shortAxis: 5.66
+        height: .079
+      requiresSupportMaterial: false
+- key: pr-shields-cut
+  name: Clear guard on a prusa shield (regular length)
+  documentation: https://www.prusaprinters.org/prints/25857/files
+  image: https://cdn.prusa3d.com/wp-content/uploads/2020/03/shield-1.jpg
+  description: |
+    The laser cut portion of a standad Prusa face shield. 
+    This model is highly popular, and many others are based on it.
+  equipment:
+    cutter:
+      sheet:
+        thickness: .020
+      requiredDimensions:
+        longAxis: 9.5
+        shortAxis: 9.5
+- key: pr-shields-cut-long
+  name: Clear guard on a long dental prusa shield
+  documentation: https://www.prusaprinters.org/prints/25857/files
+  image: https://cdn.prusa3d.com/wp-content/uploads/2020/03/shield-1.jpg
+  description: |
+    The laser cut portion of a long Prusa face shield. 
+    This model is designed for dentists
+  equipment:
+    cutter:
+      sheet:
+        thickness: .020
+      requiredDimensions:
+        longAxis: 12.2
+        shortAxis: 9.5
 - key: mn-shields-cut
-  name: Maker Nexus Shields Cut
+  name: Clear guard on a Maker Nexus shield
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
   image: http://makernexuswiki.com/images/thumb/1/14/Face_shield_front.jpg/450px-Face_shield_front.jpg
   description: |
-    These face shields can protect medical staff while they assist
-    high-risk patients.
+    This is the front clear guard on the shield
   equipment:
     cutter:
       sheet:

@@ -2,8 +2,24 @@
 - key: mn-shield
   name: Maker Nexus face shield
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
-  description: Both parts of the mask together
+  description: Variant of the prusa.
   image: http://makernexuswiki.com/images/thumb/1/14/Face_shield_front.jpg/450px-Face_shield_front.jpg
   parts:
     mn-shields-cut: 1
     mn-shields-print: 1
+- key: prusa-shield
+  name: Prusa face shield
+  documentation: https://www.prusaprinters.org/prints/25857
+  description: A popular model. Many other shields are variants of this.
+  image: https://cdn.prusa3d.com/wp-content/uploads/2020/03/shield-1.jpg
+  parts:
+    pr-shields-cut: 1
+    pr-shields-print: 1
+- key: prusa-shield-dental
+  name: Prusa dental face shield
+  documentation: https://www.prusaprinters.org/prints/25857
+  description: A longer variant of the popular Prusa model, specialized for dentists
+  image: https://cdn.prusa3d.com/wp-content/uploads/2020/03/shield-1.jpg
+  parts:
+    pr-shields-cut-long: 1
+    pr-shields-print: 1
