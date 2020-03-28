@@ -3,7 +3,7 @@
 - Permalinks for rendering
   - X parts
   - devices
-  - destinations
+  - X destinations
 - Full list rendering for make-able parts
   - Mark makable
   - Sort unmakable parts at the bottom
