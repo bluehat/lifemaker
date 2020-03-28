@@ -2,7 +2,7 @@
 - key: shf
   name: Swedish Hospital Foundation
   documentation: https://www.facebook.com/groups/512046289743405/about/
-  address: Jennifer Blitz, Swedish Hospital Foundation, 5145 N California Ave, Chicago IL 60625 
+  address: Jennifer Blitz, Swedish Hospital Foundation, 5145 N California Ave, Chicago IL 60625
   latlong:
     - 41.975208
     - -87.698410
@@ -10,6 +10,8 @@
     Swedish Hospital Foundation requests that you include your name, address and email so the hospital can send a thank you. They would also like a phone number.
   parts:
     - smf-shields
+  devices:
+    - mn-shield
 - key: mn
   name: Maker Nexus
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
@@ -20,5 +22,6 @@
   description: |-
     Please contact them, they have internal systems.
   parts:
-    - mn-shields-printed
-	- mn-shields-cut
+    - mn-shields-print
+    - mn-shields-cut
+  devices: []

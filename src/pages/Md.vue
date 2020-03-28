@@ -1,17 +1,18 @@
 <template>
-  <div class="features">
+  <div class="md">
     <div v-html="markdown" />
   </div>
 </template>
 
 <script>
-import features from "../../features.md";
 import { routerfyMarkdown } from "../tools/markdown";
+import { getMarkdownBody } from "../md/pages";
 
 export default {
-  name: "Features",
+  name: "Md",
+  props: ["page"],
   computed: {
-    markdown: () => features
+    markdown: vm => getMarkdownBody(vm.page)
   },
   mounted: function() {
     routerfyMarkdown(this.$el, this.$router);
@@ -20,7 +21,7 @@ export default {
 </script>
 
 <style>
-.home {
+.md {
   padding-top: 2em;
 }
 </style>

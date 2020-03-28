@@ -1,46 +1,44 @@
-import Home from "./pages/Home.vue";
-import Makers from "./pages/Makers.vue";
 import Manufacturing from "./pages/Manufacturing.vue";
-import Readme from "./pages/Readme.vue";
-import Features from "./pages/Features.vue"
-import Other_resources from "./pages/Other_resources.vue"
-import Safety from "./pages/Safety.vue"
+import Part from "./pages/Part.vue";
+import Destination from "./pages/Destination.vue";
+import Destinations from "./pages/Destinations.vue";
+import Devices from "./pages/Devices.vue";
+import Device from "./pages/Device.vue";
+import { markdownPages } from "./md/pages";
 
 export default [
-  {
-    path: "/",
-    name: "home",
-    component: Home
-  },
-  {
-    path: "/makers/:user",
-    name: "makers",
-    component: Makers,
-    props: true
-  },
+  ...markdownPages,
   {
     path: "/manufacturing",
     name: "manufacturing",
     component: Manufacturing
   },
   {
-    path: "/readme",
-    name: "readme",
-    component: Readme
+    path: "/parts/:partKey",
+    name: "part",
+    component: Part,
+    props: true
   },
   {
-    path: "/other_resources",
-    name: "other_resources",
-    component: Other_resources
+    path: "/devices/:deviceKey",
+    name: "device",
+    component: Device,
+    props: true
   },
   {
-    path: "/features",
-    name: "features",
-    component: Features
+    path: "/destinations/:destinationKey",
+    name: "destination",
+    component: Destination,
+    props: true
   },
   {
-    path: "/safety",
-    name: "safety",
-    component: Safety
+    path: "/destinations",
+    name: "destinations",
+    component: Destinations
+  },
+  {
+    path: "/devices",
+    name: "devices",
+    component: Devices
   }
 ];

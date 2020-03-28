@@ -29,29 +29,36 @@
       <h3>You can help!</h3>
       <p>Here's what you can make to help people in need:</p>
     </div>
-    <div v-for="part of supportedParts" :key="part.key">
+    <div v-for="part of evaluatedParts" :key="part.key">
       <h4 :style="{'margin-bottom': 0}">
-        <a :href="part.documentation">{{part.name}}</a>
+        <router-link :to="{name: 'part', params: {partKey: part.key}}">{{part.name}}</router-link>
       </h4>
-      <CutterSpec v-if="part.equipment.cutter" :spec="part.equipment.cutter" />
-      <PrinterSpec v-if="part.equipment.printer" :spec="part.equipment.printer" />
+      <div>
+        <span v-for="[key, supported] of Object.entries(part.requirements)" :key="key">          
+          <span v-if="supported"> 
+            <span class="checkmark"></span>Your {{formatDevice(key)}} is compatable!
+          </span>
+          <span v-if="!supported">
+            <span class="xmark"></span>
+            {{equipment[key].has ? `Your ${formatDevice(key)} is not compatible` : `${formatDevice(key)} needed`}}
+          </span>
+        </span>
+      </div>
       <div v-html="part.description"></div>
     </div>
   </div>
 </template>
 
 <script>
+import { parseDescriptions } from "../tools/markdown";
 import devices from "../yml/devices.yml";
 import parts from "../yml/parts.yml";
 import EquipmentForm from "../components/EquipmentForm";
 import PullDown from "../components/PullDown";
-import PrinterSpec from "../components/PrinterSpec";
-import CutterSpec from "../components/CutterSpec";
 
 import {
   where,
   map,
-  all,
   values,
   any,
   pipe,
@@ -60,18 +67,14 @@ import {
   either,
   not,
   curry,
-  always
+  always,
+  mapObjIndexed,
+  filter,
+  identity,
+  all,
+  sortWith,
+  descend
 } from "ramda";
-
-import { Parser, HtmlRenderer } from "commonmark";
-const [parser, renderer] = [new Parser(), new HtmlRenderer()];
-
-const parseDescriptions = list =>
-  list.map(item => ({
-    ...item,
-    description:
-      item.description && renderer.render(parser.parse(item.description))
-  }));
 
 const saveEquipment = equipment =>
   localStorage.setItem("saved-equipment", JSON.stringify(equipment));
@@ -82,11 +85,12 @@ const loadStoredEquipment = () => {
 };
 
 export default {
-  name: "Home",
+  name: "Manufacturing",
   computed: {
     parts: () => parseDescriptions(parts),
     devices: () => parseDescriptions(devices),
-    supportedParts: vm => {
+    supportedParts: vm => filter(vm.partSupported)(vm.evaluatedParts),
+    evaluatedParts: vm => {
       if (!vm.equipment) return [];
 
       const geq = curry((spec, candidate) =>
@@ -122,15 +126,19 @@ export default {
           ])(sewing)
       };
 
-      return vm.parts.filter(part =>
-        all(
-          ([k, v]) => evaluators[k](v, vm.equipment[k]),
-          Object.entries(part.equipment)
-        )
-      );
+      return pipe(
+        map(part => ({
+          ...part,
+          requirements: mapObjIndexed(
+            (n, k, o) => evaluators[k](o[k], vm.equipment[k]),
+            part.equipment
+          )
+        })),
+        sortWith([descend(vm.partSupported)])
+      )(vm.parts);
     }
   },
-  components: { EquipmentForm, PullDown, PrinterSpec, CutterSpec },
+  components: { EquipmentForm, PullDown },
   created() {
     if (pipe(values, any(prop("has")))(this.equipment))
       this.equipmentOpen = false;
@@ -139,6 +147,14 @@ export default {
   watch: {
     equipment() {
       saveEquipment(this.equipment);
+    }
+  },
+  methods: {
+    partSupported(part) {
+      return pipe(prop("requirements"), values, all(identity))(part);
+    },
+    formatDevice(key) {
+      return key === 'cutter' ? 'Cutter' : '3D Printer';
     }
   }
 };
@@ -150,6 +166,13 @@ export default {
 }
 .checkmark::after {
   content: "✓";
+}
+
+.xmark {
+  color: #a33;
+}
+.xmark::after {
+  content: "×";
 }
 
 #equipment {
