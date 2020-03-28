@@ -14,9 +14,8 @@ export default {
   computed: {
     markdown: vm => getMarkdownBody(vm.page)
   },
-  mounted: function() {
-    routerfyMarkdown(this.$el, this.$router);
-  }
+  beforeRouteEnter: (to, from, next) =>
+    next(vm => routerfyMarkdown(vm.$el, vm.$router))
 };
 </script>
 
