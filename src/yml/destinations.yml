@@ -25,3 +25,30 @@
     - mn-shields-cut
   devices:
     - mn-shield
+- key: dh-nh
+  name: Dartmouth-Hitchcock
+  documentation: https://www.dartmouth-hitchcock.org/patient-education/sewing-masks.html
+  address: DHMC Donations, 50 LaBombard Road North, Lebanon, NH 03766
+  latlong:
+    - 43.659790
+    - -72.240670
+  description: that is the mailing address, they also have several drop-off addresses
+  parts: []
+  devices: 
+    - dh-sewn
+- key: open-works
+  name: Open Works Baltimore
+  documentaiton: https://www.openworksbmore.org/2020/03/makers-unite-face-shield-project/
+  address: Open Works, 1400 Greenmount Avenue, Baltimore, MD 21202
+  latlong:
+    - 39.306140
+    - -76.608750
+  description: |-
+    that is a drop-off location. 
+    *Call them before printing* 
+    they have a chain of custody tracker
+  parts: 
+    pr-shields-cut
+    pr-shields-print
+  devices:
+    prusa-shield

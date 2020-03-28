@@ -80,3 +80,10 @@
       requiredDimensions:
         longAxis: 9.5
         shortAxis: 9.5
+- key: dh-sewn-part
+  name: Sewn Masks (Dartmouth Hitchcock specs)
+  docuemntation: https://www.dartmouth-hitchcock.org/patient-education/sewing-masks.html
+  description: Masks sewn to Dartmouth Hitchcock specs
+  manufacturing:
+      sewing:
+        material: cloth
