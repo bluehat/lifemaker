@@ -1,7 +1,9 @@
 <template>
   <div id="header">
     <div class="inner">
-      <h1>lifemaker</h1>
+      <h1>
+        <router-link :to="{name: 'home'}">lifemaker</router-link>
+      </h1>
       <h2>Makers saving lives</h2>
       <a id="github" href="https://github.com/bluehat/lifemaker">View on GitHub</a>
       <div class="navigation">
@@ -65,5 +67,12 @@ a#github {
 .navigation a:not(:first-child) {
   padding-left: 0.5em;
   border-left: solid 2px #bbb;
+}
+
+#header h1 a {
+  color: white;
+}
+#header h1 a:hover {
+  text-decoration: none;
 }
 </style>
