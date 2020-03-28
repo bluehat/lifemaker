@@ -29,13 +29,20 @@
       <h3>You can help!</h3>
       <p>Here's what you can make to help people in need:</p>
     </div>
-    <div v-for="part of supportedParts" :key="part.key">
+    <div v-for="part of evaluatedParts" :key="part.key">
       <h4 :style="{'margin-bottom': 0}">
         <router-link :to="{name: 'part', params: {partKey: part.key}}">{{part.name}}</router-link>
       </h4>
       <div>
-        <span class="checkmark"></span>
-        Your {{part.equipment.cutter ? 'Cutter' : '3D Printer'}} is compatable!
+        <span v-for="[key, supported] of Object.entries(part.requirements)" :key="key">          
+          <span v-if="supported"> 
+            <span class="checkmark"></span>Your {{formatDevice(key)}} is compatable!
+          </span>
+          <span v-if="!supported">
+            <span class="xmark"></span>
+            {{equipment[key].has ? `Your ${formatDevice(key)} is not compatible` : `${formatDevice(key)} needed`}}
+          </span>
+        </span>
       </div>
       <div v-html="part.description"></div>
     </div>
@@ -52,7 +59,6 @@ import PullDown from "../components/PullDown";
 import {
   where,
   map,
-  all,
   values,
   any,
   pipe,
@@ -61,7 +67,13 @@ import {
   either,
   not,
   curry,
-  always
+  always,
+  mapObjIndexed,
+  filter,
+  identity,
+  all,
+  sortWith,
+  descend
 } from "ramda";
 
 const saveEquipment = equipment =>
@@ -77,7 +89,8 @@ export default {
   computed: {
     parts: () => parseDescriptions(parts),
     devices: () => parseDescriptions(devices),
-    supportedParts: vm => {
+    supportedParts: vm => filter(vm.partSupported)(vm.evaluatedParts),
+    evaluatedParts: vm => {
       if (!vm.equipment) return [];
 
       const geq = curry((spec, candidate) =>
@@ -113,12 +126,16 @@ export default {
           ])(sewing)
       };
 
-      return vm.parts.filter(part =>
-        all(
-          ([k, v]) => evaluators[k](v, vm.equipment[k]),
-          Object.entries(part.equipment)
-        )
-      );
+      return pipe(
+        map(part => ({
+          ...part,
+          requirements: mapObjIndexed(
+            (n, k, o) => evaluators[k](o[k], vm.equipment[k]),
+            part.equipment
+          )
+        })),
+        sortWith([descend(vm.partSupported)])
+      )(vm.parts);
     }
   },
   components: { EquipmentForm, PullDown },
@@ -131,6 +148,14 @@ export default {
     equipment() {
       saveEquipment(this.equipment);
     }
+  },
+  methods: {
+    partSupported(part) {
+      return pipe(prop("requirements"), values, all(identity))(part);
+    },
+    formatDevice(key) {
+      return key === 'cutter' ? 'Cutter' : '3D Printer';
+    }
   }
 };
 </script>
@@ -141,6 +166,13 @@ export default {
 }
 .checkmark::after {
   content: "✓";
+}
+
+.xmark {
+  color: #a33;
+}
+.xmark::after {
+  content: "×";
 }
 
 #equipment {
