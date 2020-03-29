@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162148341-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162148341-1');
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -10,11 +19,15 @@
   </head>
   <body>
     <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
+      <strong>We're sorry but lifemakers doesn't work
+        properly without JavaScript enabled. 
+        <br>
+        We have been repeatedly and emphatically informed of the irony of this, but this is a do-ocracy, and the person who actually showed up and did the work picked JavaScript. 
+        <br>
+        Please briefly whitelist lifemaker.org to help address this international emergency. <br> 
+        This will help us return to the urgent issue of fighting about languages and tech stacks as promptly as possible.
+        <br>
+        If you have comments about language or tech stack decisions which absolutely can not wait, please leave them in the commit messages of helpful pull requests.</strong>
     </noscript>
     <div id="application"></div>
     <!-- built files will be auto injected -->
