@@ -3,15 +3,15 @@
     <div>
       <div>
         <strong>Short Axis:</strong>
-        <span>{{spec.requiredDimensions.shortAxis}} inches</span>
+        <span>{{spec.requiredDimensions.shortAxis}} mm</span>
       </div>
       <div>
         <strong>Long Axis:</strong>
-        <span>{{spec.requiredDimensions.longAxis}} inches</span>
+        <span>{{spec.requiredDimensions.longAxis}} mm</span>
       </div>
       <div>
         <strong>Height:</strong>
-        <span>{{spec.requiredDimensions.height}} inches</span>
+        <span>{{spec.requiredDimensions.height}} mm</span>
       </div>
     </div>
     <div>

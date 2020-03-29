@@ -165,14 +165,14 @@ export default {
   color: #3a3;
 }
 .checkmark::after {
-  content: "✓";
+  content: "✓ ";
 }
 
 .xmark {
   color: #a33;
 }
 .xmark::after {
-  content: "×";
+  content: "× ";
 }
 
 #equipment {

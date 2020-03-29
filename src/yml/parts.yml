@@ -8,9 +8,9 @@
   equipment:
     printer:
       requiredDimensions:
-        longAxis: 7
-        shortAxis: 6
-        height: .35
+        longAxis: 182
+        shortAxis: 145
+        height: 9
       requiresSupportMaterial: false
 - key: mn-shields-print
   name: Printed top of a Maker Nexus shield
@@ -21,9 +21,9 @@
   equipment:
     printer:
       requiredDimensions:
-        longAxis: 9.14
-        shortAxis: 7.55
-        height: .79
+        longAxis: 200
+        shortAxis: 149
+        height: 20
       requiresSupportMaterial: false
       filament: PETG
 - key: pr-shields-print
@@ -34,9 +34,9 @@
   equipment:
     printer:
       requiredDimensions:
-        longAxis: 7.52
-        shortAxis: 5.66
-        height: .079
+        longAxis: 191
+        shortAxis: 144
+        height: 20
       requiresSupportMaterial: false
 - key: pr-shields-cut
   name: Clear guard on a prusa shield (regular length)
@@ -48,10 +48,10 @@
   equipment:
     cutter:
       sheet:
-        thickness: .020
+        thickness: 5
       requiredDimensions:
-        longAxis: 9.5
-        shortAxis: 9.5
+        longAxis: 240
+        shortAxis: 240
 - key: pr-shields-cut-long
   name: Clear guard on a long dental prusa shield
   documentation: https://www.prusaprinters.org/prints/25857/files
@@ -62,10 +62,10 @@
   equipment:
     cutter:
       sheet:
-        thickness: .020
+        thickness: 5
       requiredDimensions:
-        longAxis: 12.2
-        shortAxis: 9.5
+        longAxis: 310
+        shortAxis: 240
 - key: mn-shields-cut
   name: Clear guard on a Maker Nexus shield
   documentation: http://makernexuswiki.com/index.php?title=3D_printed_face_shields
@@ -75,11 +75,11 @@
   equipment:
     cutter:
       sheet:
-        thickness: .020
+        thickness: 5
         material: PETG
       requiredDimensions:
-        longAxis: 9.5
-        shortAxis: 9.5
+        longAxis: 240
+        shortAxis: 240
 - key: dh-sewn-part
   name: Sewn Masks (Dartmouth Hitchcock specs)
   documentation: https://www.dartmouth-hitchcock.org/patient-education/sewing-masks.html

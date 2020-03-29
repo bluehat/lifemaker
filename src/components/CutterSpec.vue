@@ -3,11 +3,11 @@
     <div>
       <div>
         <strong>Short Axis:</strong>
-        <span>{{spec.requiredDimensions.shortAxis}} inches</span>
+        <span>{{spec.requiredDimensions.shortAxis}} mm</span>
       </div>
       <div>
         <strong>Long Axis:</strong>
-        <span>{{spec.requiredDimensions.longAxis}} inches</span>
+        <span>{{spec.requiredDimensions.longAxis}} mm</span>
       </div>
     </div>
     <div>
@@ -17,7 +17,7 @@
       </div>
       <div>
         <strong>Thickness:</strong>
-        <span>{{spec.sheet.thickness}} inches</span>
+        <span>{{spec.sheet.thickness}} mm</span>
       </div>
     </div>
   </div>
