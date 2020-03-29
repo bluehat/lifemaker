@@ -87,3 +87,16 @@
   equipment:
       sewing:
         material: cloth
+- key: hsien-aerosol-box-cut
+  name: Dr. Hsien Yung Lai Aerosol box cut
+  image: https://i.imgur.com/nnDaamM.jpg
+  documentation: https://www.evernote.com/shard/s45/client/snv?noteGuid=d4db105f-828b-42eb-94bf-a4bf41d59a31&noteKey=a25fa508c8c68963&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs45%2Fsh%2Fd4db105f-828b-42eb-94bf-a4bf41d59a31%2Fa25fa508c8c68963&title=20200325+Dr.+Hsien+Yung+Lai+Aerosol+box+V1.1+-+KS+-+Malaysia
+  description: Bay area doctors have modified them to have [oval arm holes with plastic coverings](https://i.imgur.com/bvYnILS.jpg) 
+  equipment:
+    cutter:
+      sheet:
+        thickness: 10
+        material: plexiglass / acrylic
+      requiredDimensions:
+        longAxis: 650
+        shortAxis: 400

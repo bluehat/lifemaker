@@ -7,7 +7,7 @@
     >
       <div class="two-column">
         <div>
-          <label>Long axis (inches)</label>
+          <label>Long axis (mm)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
@@ -17,7 +17,7 @@
           />
         </div>
         <div>
-          <label>Short axis (inches)</label>
+          <label>Short axis (mm)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div>
-        <label>Height (inches)</label>
+        <label>Height (mm)</label>
         <PathedInput
           @pathChange="pathChanged"
           :object="local"
@@ -66,7 +66,7 @@
           />
         </div>
         <div>
-          <label>Short axis (inches)</label>
+          <label>Short axis (mm)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"
