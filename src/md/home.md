@@ -8,6 +8,7 @@ This website attempts to help develop supply chains to formalize and scale this 
 - [For makers and maker groups who would like to start making things](./#manufacturing)
 - [For healthcare providers](./#devices) who need equipment
 - [For website volunteers](./#readme) such as coders, designers, people who aren't afraid to talk on the phone, medical professionals prepared to give feedback on new designs, and technical writers.
+- If you want to be informed should a local drop point come online [give us your email](https://forms.gle/x1TBLaaETXv7RWrF7).
 
 If you have no idea what all of this nerd stuff is about or are struggling to explain this to somebody, check out our [about page.](./#about)
 
