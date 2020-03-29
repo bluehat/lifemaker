@@ -25,7 +25,7 @@
     pr-shields-print: 1
 - key: dh-sewn
   name: Sewn Masks (Dartmouth Hitchcock specs)
-  docuemntation: https://www.dartmouth-hitchcock.org/patient-education/sewing-masks.html
+  documentation: https://www.dartmouth-hitchcock.org/patient-education/sewing-masks.html
   description: Masks sewn to Dartmouth Hitchcock specs
   parts:
     dh-sewn-part: 1
