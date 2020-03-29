@@ -30,14 +30,13 @@
   parts:
     dh-sewn-part: 1
 - key: binder-shields
-  name: Shields made with binders
+  name: Office Supply Shields
   documentation: https://covidsupplyconnection.files.wordpress.com/2020/03/v8-faceshield.pdf
   description: |
     These shields use the Swedish frame and are then office supply plastic for the front.  
     Suggested plastic includes a report cover binder or a binder cover.  
     The pegs are measured to work with a standard 3-ring binder punch.  
-    They are not the finest quality thing on this site.  
-    They are however easy to make and in wide circulation.  
+    The fronts can not be cleaned, but on the upside they don't require a laser cutter.   
   image: https://covidsupplyconnection.files.wordpress.com/2020/03/face-shield_extended-visor-front-side.jpg
   parts:
     smf-shields-print: 1

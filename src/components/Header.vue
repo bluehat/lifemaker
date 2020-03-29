@@ -10,7 +10,7 @@
         <router-link :to="{name: 'manufacturing'}">For makers</router-link>
         <router-link :to="{name: 'devices'}">For healthcare providers</router-link>
         <router-link :to="{name: 'safety'}">Safety</router-link>
-        <router-link :to="{name: 'home'}">About</router-link>
+        <router-link :to="{name: 'about'}">About</router-link>
       </div>
     </div>
   </div>

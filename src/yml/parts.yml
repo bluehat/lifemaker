@@ -78,7 +78,7 @@
         thickness: 5
         material: PETG
       requiredDimensions:
-        longAxis: 240
+        longAxis: 340
         shortAxis: 240
 - key: dh-sewn-part
   name: Sewn Masks (Dartmouth Hitchcock specs)
