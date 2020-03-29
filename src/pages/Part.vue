@@ -26,7 +26,7 @@
         </li>
       </ul>
     </div>
-    <div class="part-equipment">
+    <div class="part-equipment" v-if="part.equipment.cutter || part.equipment.printer">
       <h5>{{part.equipment.cutter ? 'Cutter' : '3d Printer'}} needed:</h5>
       <CutterSpec v-if="part.equipment.cutter" :spec="part.equipment.cutter" />
       <PrinterSpec v-if="part.equipment.printer" :spec="part.equipment.printer" />
