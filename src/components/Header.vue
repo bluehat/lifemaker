@@ -4,11 +4,10 @@
       <h1>
         <router-link :to="{name: 'home'}">lifemaker</router-link>
       </h1>
-      <h2>Makers saving lives</h2>
-      <a id="github" href="https://github.com/bluehat/lifemaker">View on GitHub</a>
       <div class="navigation">
-        <router-link :to="{name: 'manufacturing'}">For makers</router-link>
-        <router-link :to="{name: 'devices'}">For healthcare providers</router-link>
+        <router-link :to="{name: 'manufacturing'}">Make Supplies</router-link>
+        <router-link :to="{name: 'devices'}">Get Supplies</router-link>
+        <router-link :to="{name: 'readme'}">Code</router-link>
         <router-link :to="{name: 'safety'}">Safety</router-link>
         <router-link :to="{name: 'about'}">About</router-link>
       </div>
@@ -32,9 +31,9 @@ export default {
 
 <style>
 #header {
-  background-image: linear-gradient(to top, rgb(55, 55, 55), rgb(33, 33, 33));
+  background-image: linear-gradient(to top, rgb(11,12,28), rgb(35, 36, 50));
 
-  color: white;
+  color: rgb(195,188,196);
 }
 
 #header .inner {
@@ -43,21 +42,10 @@ export default {
   padding-bottom: 2.75em;
 }
 
-a#github {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: white;
-  font-weight: bold;
-  background: url("../assets/blacktocat.png") #0090ff no-repeat 95% 50%;
-  padding: 0.8em 3em 0.8em 0.7em;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
 .navigation {
   position: absolute;
   bottom: 0;
+  right: 0;
   padding-bottom: 0.5em;
 }
 

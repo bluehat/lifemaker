@@ -6,6 +6,8 @@
 - Any sort of design or aesthetic sensibilities whatsoever
 - [Features](./#features)
 
+This project is on github at https://github.com/bluehat/lifemaker
+
 ### Medical
 
 We need medical professionals [to help us vet technology which is not yet in use.](equipment/unvetted.md)
