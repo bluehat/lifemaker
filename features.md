@@ -13,6 +13,5 @@
 - Navigation + app on home page
 - Mobile (surprisingly fine so far)
 
-### Longer Term
-
-- Change all units to cm
+## Major features
+- A better way to submit designs
