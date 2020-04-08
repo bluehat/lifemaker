@@ -17,4 +17,4 @@ Here are some basic steps:
     - Please include both a mail location and a no-contact drop location
 - Submit a pull request
 
-If you do not have time for this, the slower way is to wait for one of our volunteers to have time to do it. Please document as much of this as possible and [send it to](mailto:makers@lifemaker.org?subject=New%20Design).
+If you do not have time for this, the slower way is to wait for one of our volunteers to have time to do it. Please document as much of this as possible and [send it to us.](mailto:makers@lifemaker.org?subject=New%20Design).
