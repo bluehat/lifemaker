@@ -8,7 +8,7 @@
         <router-link :to="{name: 'manufacturing'}">Make Supplies</router-link>
         <router-link :to="{name: 'devices'}">Get Supplies</router-link>
         <router-link :to="{name: 'readme'}">Code</router-link>
-        <router-link :to="{name: 'safety'}">Safety</router-link>
+        <router-link :to="{name: 'safety'}"><strong>Safety</strong></router-link>
         <router-link :to="{name: 'about'}">About</router-link>
       </div>
     </div>
@@ -32,7 +32,6 @@ export default {
 <style>
 #header {
   background-image: linear-gradient(to top, rgb(11,12,28), rgb(35, 36, 50));
-
   color: rgb(195,188,196);
 }
 
@@ -58,11 +57,11 @@ export default {
 
 .navigation a.router-link-exact-active {
   text-decoration: underline;
+  color: white;
 }
 
 .navigation a:not(:first-child) {
-  padding-left: 0.5em;
-  border-left: solid 2px #bbb;
+  padding-left: 1.5em;
 }
 
 #header h1 a {
@@ -70,5 +69,8 @@ export default {
 }
 #header h1 a:hover {
   text-decoration: none;
+}
+strong{
+  color: #5b88a4;
 }
 </style>
