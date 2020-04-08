@@ -3,6 +3,7 @@
 Currently, the process to submit a design is not optimal. We would deeply appreciate help making a better system.
 
 Here are some basic steps:
+- The github repo is at https://github.com/bluehat/lifemaker
 - Edit the yml files at https://github.com/bluehat/lifemaker/tree/master/src/yml
   - Put the device in devices.yml 
     - This is also the appropriate space to document non-manufactured parts
