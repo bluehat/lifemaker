@@ -56,7 +56,7 @@
     >
       <div class="two-column">
         <div>
-          <label>Long axis (inches)</label>
+          <label>Long axis (mm)</label>
           <PathedInput
             @pathChange="pathChanged"
             :object="local"

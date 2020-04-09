@@ -9,7 +9,7 @@ During this crisis, makers are organizing with their local healthcare providers 
 
 This is why lifemaker.org exists. Lifemaker.org lists which healthcare providers are requesting what critical supplies, and how to best get them those items. It also helps healthcare providers request items.
 
-We would like very much to understand what healthcare providers need to continue saving lives and help them get those supplies. Please contact us right away if [you are a healthcare provider in need of critical supplies](mailto:healthcare@lifemaker.org?subject=Requesting%20Supplies) or if you [are already delivering critical supplies]((mailto:makers@lifemaker.org?subject=Scaling%20Production) and would like to scale up your production.
+We would like very much to understand what healthcare providers need to continue saving lives and help them get those supplies. Please contact us right away if [you are a healthcare provider in need of critical supplies](mailto:healthcare@lifemaker.org?subject=Requesting%20Supplies) or if [you are already delivering critical supplies](mailto:makers@lifemaker.org?subject=Scaling%20Production) and would like to scale up your production.
 
 ### Other resources
 There are [other folks doing great work too.](./#other_resources)

@@ -162,17 +162,18 @@ export default {
     
 <style>
 .checkmark {
-  color: #3a3;
+  color: #004868;
+  padding-right: .5em;
 }
 .checkmark::after {
-  content: "✓ ";
+  content: "✓";
 }
 
 .xmark {
-  color: #a33;
+  color: #530d2b;
 }
 .xmark::after {
-  content: "× ";
+  content: "×";
 }
 
 #equipment {
