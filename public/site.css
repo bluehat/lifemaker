@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  color: #373737;
-  background-color: rgb(242, 242, 242);
+  color: #14171a;
+  background-color: #f5f8fa;
 }
 
 .inner {
@@ -40,7 +40,6 @@ h2 {
 h3 {
   margin: 10px 0;
   font-size: 24px;
-  color: #222;
 }
 
 h4 {
@@ -53,7 +52,8 @@ h5 {
 
 a {
   text-decoration: none;
-  color: #0f79d0;
+  color: #1da1f2;
+  font-weight: bold;
 }
 
 a:hover {
@@ -110,5 +110,5 @@ li {
 }
 
 .external-link:hover {
-  border-bottom: solid 2px #0f79d0;
+  border-bottom: solid 2px #008fd4;
 }

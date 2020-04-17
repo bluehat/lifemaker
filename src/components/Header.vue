@@ -31,8 +31,8 @@ export default {
 
 <style>
 #header {
-  background-image: linear-gradient(to top, rgb(11,12,28), rgb(35, 36, 50));
-  color: rgb(195,188,196);
+  background-color: #001f2d;
+  color: #f5f8fa;
 }
 
 #header .inner {
@@ -49,7 +49,7 @@ export default {
 }
 
 .navigation a {
-  color: white;
+  color: #f5f8fa;
   font-weight: bold;
   font-size: 18px;
   padding-right: 0.5em;
@@ -57,7 +57,7 @@ export default {
 
 .navigation a.router-link-exact-active {
   text-decoration: underline;
-  color: white;
+  color: #f5f8fa;
 }
 
 .navigation a:not(:first-child) {
@@ -65,12 +65,12 @@ export default {
 }
 
 #header h1 a {
-  color: white;
+  color: #f5f8fa;
 }
 #header h1 a:hover {
   text-decoration: none;
 }
-strong{
-  color: #5b88a4;
+#header strong{
+  color: #00aeef;
 }
 </style>
