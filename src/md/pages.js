@@ -5,7 +5,8 @@ import home from "../md/home.md";
 import safety from "../md/safety.md";
 import about from "../md/about.md";
 import submit from "../md/submit.md";
-const markdownBodies = { readme, other_resources, home, safety, about, submit };
+import sources from "../md/sources.md"
+const markdownBodies = { readme, other_resources, home, safety, about, submit, sources };
 
 const markdownPage = (markdownName, path) => ({
   path: path || `/${markdownName}`,
@@ -21,7 +22,8 @@ export const markdownPages = [
   markdownPage("other_resources"),
   markdownPage("safety"),
   markdownPage("about"),
-  markdownPage("submit")
+  markdownPage("submit"),
+  markdownPage("sources")
 ];
 
 export function getMarkdownBody(markdownName) {

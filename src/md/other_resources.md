@@ -8,3 +8,6 @@ Formlabs is [looking for people who own their printers specifically](https://for
 
 ### Matterhackers
 Matterhackers is [accepting registrations](https://www.matterhackers.com/covid-19) from people have 3D printers and want to be connected to healthcare professionals.
+
+## Related Efforts
+Contract tracing which respects privacy https://ncase.me/contact-tracing/

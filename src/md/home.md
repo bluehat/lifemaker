@@ -6,3 +6,6 @@ Lifemaker connects makers with healthcare workers who desperately need these cri
 - If you are already delivering devices and want to scale up, [contact us](mailto:makers@lifemaker.org?subject=Scaling%20Production).
 - If you want to be informed should a local drop point come online [give us your email](https://forms.gle/x1TBLaaETXv7RWrF7).
 - Here is how you [submit a new design.](./#submit)
+
+### Other help 
+We have a huge backlog of data entry at [sources](./#sources)
