@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  color: #14171a;
+  background-color: #f5f8fa;
+}
+
+.inner {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  line-height: 24px;
+  letter-spacing: 0.015rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 0.005rem !important;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+
+li {
+  list-style: disc;
+}
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.spec > div {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.spec > div > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
+
+.spec > div > div > span,
+.spec > div > div > strong {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.external-link {
+  background-image: url("/iconmonstr-share-11.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: solid 2px #0f79d000;
+  margin-left: 0.5em;
+  height: 1.2em;
+  width: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.external-link:hover {
+  border-bottom: solid 2px #008fd4;
+}
